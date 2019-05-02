@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fcfcfc
+}
+
+header {
+    background-color: #f0f0f0;
+    text-align: center;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-position: top;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 80px;
+    font-size: 3em;
+    color: white;
+}
+
+header p {
+    padding-bottom: 80px;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 12px;
+    width: 100%;
+    max-width: 720px;
+}
+
+.element {
+    background-color: white;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.element div {
+    width: calc(100% - 80px);
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 300px;
+
+    background-size: cover;
+
+    filter: url(filters.svg#grayscale);
+    /* Firefox 3.5+ */
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(1);
+    /* Google Chrome & Safari 6+ */
+}
+
+.element div:hover {
+    filter: none;
+    -webkit-filter: none;
+}
+
+.element h2 {
+    margin-left: 8px;
+}
+
+.element p {
+    margin-left: 12px;
+    margin-right: 12px;
+}
